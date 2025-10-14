@@ -11,11 +11,11 @@ fun grade(mark: Int): String {
 }
 
 fun main(args: Array<String>) {
-    if (args.size != 1) {
-        println("Need at least one command line argument")
-        exitProcess(1)
-    }
-    for (i in 0..args.size) {
+    // if (args.size != 1) {
+    //     println("Need at least one command line argument")
+    //     exitProcess(1)
+    // }
+    for (i in 0..(args.size -1)) {
         var mark = args[i].toInt()
         var grade = grade(mark)
         println(mark)
