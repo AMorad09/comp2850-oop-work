@@ -55,7 +55,7 @@ fun evaluateGuess(guess: String, target: String): List<Int> {
 }
 
 fun displayGuess(guess: String, matches: List<Int>) {
-    for (i in 0 until 5) {
+    for (i in 0 until WORDLENGTH) {
         if (matches[i] == 1) {
             print(guess[i])
         } else {
