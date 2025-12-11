@@ -12,7 +12,7 @@ fun main() {
 
     println("Guess the word")
 
-    for (attempt in 1..10) {
+    for (attempt in 1..MAXATTEMPTS) {
         val guess = obtainGuess(attempt)
         val matches = evaluateGuess(guess, targetWord)
 

@@ -1,10 +1,10 @@
 import java.io.File
 
-const val wordlength = 5
-const val maxattempts = 10
+const val WORDLENGTH = 5
+const val MAXATTEMPTS = 10
 
 fun isValid(word: String): Boolean {
-    return word.length == 5
+    return word.length == WORDLENGTH
 }
 
 fun readWordList(filename: String): MutableList<String> {
@@ -44,7 +44,7 @@ fun obtainGuess(attempt: Int): String {
 fun evaluateGuess(guess: String, target: String): List<Int> {
     val result = mutableListOf<Int>()
 
-    for (i in 0 until 5) {
+    for (i in 0 until WORDLENGTH) {
         if (guess[i] == target[i]) {
             result.add(1)
         } else {
