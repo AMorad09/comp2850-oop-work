@@ -1,6 +1,4 @@
 fun main() {
-
-
     val words = readWordList("data/words.txt")
 
     if (words.isEmpty()) {
@@ -25,8 +23,4 @@ fun main() {
     }
 
     println("No attempts left, word was $targetWord")
-
-
-
-
 }

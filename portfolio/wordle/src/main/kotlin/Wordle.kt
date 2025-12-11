@@ -3,9 +3,7 @@ import java.io.File
 const val WORDLENGTH = 5
 const val MAXATTEMPTS = 10
 
-fun isValid(word: String): Boolean {
-    return word.length == WORDLENGTH
-}
+fun isValid(word: String): Boolean = word.length == WORDLENGTH
 
 fun readWordList(filename: String): MutableList<String> {
     val words = mutableListOf<String>()
