@@ -1,5 +1,8 @@
 import java.io.File
 
+const val wordlength = 5
+const val maxattempts = 10
+
 fun isValid(word: String): Boolean {
     return word.length == 5
 }
@@ -20,7 +23,7 @@ fun readWordList(filename: String): MutableList<String> {
 
 fun pickRandomWord(words: MutableList<String>): String {
     val i = (0 until words.size).random()
-    val chosenWord = words[index]
+    val chosenWord = words[i]
     words.removeAt(i)
     return chosenWord
 }
