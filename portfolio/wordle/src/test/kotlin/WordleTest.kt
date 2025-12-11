@@ -23,7 +23,6 @@ class WordleTest : StringSpec({
         val chosen = pickRandomWord(w)
 
         w.size shouldBe 2
-
         (chosen == "APPLE" || chosen == "BERRY" || chosen == "CHERRY") shouldBe true
     }
 
@@ -34,8 +33,4 @@ class WordleTest : StringSpec({
         val result = evaluateGuess(guess, target)
         result shouldBe listOf(1, 1, 0, 1, 1)
     }
-    
-
-
-
 })
