@@ -1,11 +1,6 @@
 fun main() {
     val words = readWordList("data/words.txt")
 
-    if (words.isEmpty()) {
-        println("Could not load word list")
-        return
-    }
-
     val targetWord = pickRandomWord(words)
 
     println("Guess the word")
